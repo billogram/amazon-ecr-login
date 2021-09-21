@@ -58,7 +58,7 @@ describe('Login to ECR', () => {
         expect(core.setOutput).toHaveBeenNthCalledWith(1, 'registry', '123456789012.dkr.ecr.aws-region-1.amazonaws.com');
         expect(exec.exec).toHaveBeenNthCalledWith(1,
             'docker login',
-            ['-u', 'hello', '-p', 'world', 'https://123456789012.dkr.ecr.aws-region-1.amazonaws.com'],
+            ['-u', 'hello', '-p', 'world', 'docker.billogram.com'],
             expect.anything());
         expect(core.saveState).toHaveBeenCalledTimes(1);
         expect(core.saveState).toHaveBeenCalledWith('registries', '123456789012.dkr.ecr.aws-region-1.amazonaws.com');
@@ -97,7 +97,7 @@ describe('Login to ECR', () => {
         expect(exec.exec).toHaveBeenCalledTimes(2);
         expect(exec.exec).toHaveBeenNthCalledWith(1,
             'docker login',
-            ['-u', 'hello', '-p', 'world', 'https://123456789012.dkr.ecr.aws-region-1.amazonaws.com'],
+            ['-u', 'hello', '-p', 'world', 'docker.billogram.com'],
             expect.anything());
         expect(exec.exec).toHaveBeenNthCalledWith(2,
             'docker login',
@@ -137,7 +137,7 @@ describe('Login to ECR', () => {
         expect(exec.exec).toHaveBeenCalledTimes(1);
         expect(exec.exec).toHaveBeenNthCalledWith(1,
             'docker login',
-            ['-u', 'foo', '-p', 'bar', 'https://111111111111.dkr.ecr.aws-region-1.amazonaws.com'],
+            ['-u', 'foo', '-p', 'bar', 'docker.billogram.com'],
             expect.anything());
         expect(core.saveState).toHaveBeenCalledTimes(1);
         expect(core.saveState).toHaveBeenCalledWith('registries', '111111111111.dkr.ecr.aws-region-1.amazonaws.com');
@@ -188,7 +188,7 @@ describe('Login to ECR', () => {
         expect(exec.exec).toHaveBeenCalledTimes(2);
         expect(exec.exec).toHaveBeenNthCalledWith(1,
             'docker login',
-            ['-u', 'hello', '-p', 'world', 'https://123456789012.dkr.ecr.aws-region-1.amazonaws.com'],
+            ['-u', 'hello', '-p', 'world', 'docker.billogram.com'],
             expect.anything());
         expect(exec.exec).toHaveBeenNthCalledWith(2,
             'docker login',
@@ -223,7 +223,7 @@ describe('Login to ECR', () => {
         expect(core.setOutput).toHaveBeenNthCalledWith(1, 'registry', '123456789012.dkr.ecr.aws-region-1.amazonaws.com');
         expect(exec.exec).toHaveBeenNthCalledWith(1,
             'docker login',
-            ['-u', 'hello', '-p', 'world', 'https://123456789012.dkr.ecr.aws-region-1.amazonaws.com'],
+            ['-u', 'hello', '-p', 'world', 'docker.billogram.com'],
             expect.anything());
         expect(core.saveState).toHaveBeenCalledTimes(0);
     });
