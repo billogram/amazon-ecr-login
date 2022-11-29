@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.3](https://github.com/aws-actions/amazon-ecr-login/compare/v1.5.2...v1.5.3) (2022-10-29)
+
+### [1.5.2](https://github.com/aws-actions/amazon-ecr-login/compare/v1.5.1...v1.5.2) (2022-10-18)
+
+### [1.5.1](https://github.com/aws-actions/amazon-ecr-login/compare/v1.5.0...v1.5.1) (2022-08-04)
+
+
+### Bug Fixes
+
+* reverted change that masked Docker credentials ([7d073b6](https://github.com/aws-actions/amazon-ecr-login/commit/7d073b66cc2799eb766b698980d716db7e62a8b7))
+
+## [1.5.0](https://github.com/aws-actions/amazon-ecr-login/compare/v1.4.0...v1.5.0) (2022-06-27)
+
+
+### Features
+
+* added ECR Public Registry support ([b4f084e](https://github.com/aws-actions/amazon-ecr-login/commit/b4f084e928b56f43c9afa5773b761bbfcd7e83e2))
+
+## [1.4.0](https://github.com/aws-actions/amazon-ecr-login/compare/v1.3.3...v1.4.0) (2022-05-20)
+
+
+### Features
+
+* output docker credentials after login ([57206dc](https://github.com/aws-actions/amazon-ecr-login/commit/57206dc28c379a6eebdce44c592109d2e97e031d))
+* support for username and password outputs ([d121236](https://github.com/aws-actions/amazon-ecr-login/commit/d121236bfd0a712a9f4bd93767d696874680bc95))
+
+
+### Bug Fixes
+
+* add-mask to login outputs ([45a78e2](https://github.com/aws-actions/amazon-ecr-login/commit/45a78e2dab5678b27e94cf31545c181e8ca9c044))
+
 ### [1.3.3](https://github.com/aws-actions/amazon-ecr-login/compare/v1.3.2...v1.3.3) (2021-02-15)
 
 ### [1.3.2](https://github.com/aws-actions/amazon-ecr-login/compare/v1.3.1...v1.3.2) (2021-02-01)
